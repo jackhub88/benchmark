@@ -3,7 +3,7 @@
 testfile=$(hexdump -n 16 -v -e '/1 "%02X"' /dev/urandom)
 
 if [ -z "$testfile" ]; then
-    echo "Zufalls-Dateiname konnte nicht erstellt werden!"
+    echo "Can not create a random filename!"
     exit 1;
 fi
 
